@@ -7,3 +7,7 @@ List<String> diceImages=[
   "assets/images/dice5.png",
   "assets/images/dice6.png",
 ];
+
+List rightDiceList=[];
+List leftDiceList=[];
+
