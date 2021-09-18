@@ -48,18 +48,23 @@ class _DicePageState extends State<DicePage> {
   int leftDice;
   int rightDice;
   var rightTires;
-  int totalRightDice = 0;
-  int totalLeftDice = 0;
+  int totalRightDice ;
+  int totalLeftDice ;
   String winnerName;
   var leftTries;
   Random random = new Random();
 
   @override
   void initState() {
-    leftDice = 5;
-    rightDice = 2;
-    rightTires = 1;
-    leftTries = 1;
+    setState(() {
+      leftDice = 5;
+      rightDice = 2;
+      rightTires = 1;
+      leftTries = 1;
+      totalRightDice=0;
+      totalLeftDice=0;
+    });
+
     super.initState();
   }
 
